@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Air Ticket | Prince Air Ltd</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+
+<header class="header">
+<div class="container">
+
+<div class="logo">
+<img src="images/logo.png" alt="Prince Air Ltd">
+<h2>Prince Air Ltd</h2>
+</div>
+
+<nav class="navbar">
+<a href="index.html">Home</a>
+<a href="booking.html">Booking</a>
+<a href="balance.html">Balance</a>
+<a href="visa.html">Visa</a>
+<a href="country.html">Country</a>
+<a href="airticket.html">Air Ticket</a>
+<a href="contact.html">Contact</a>
+</nav>
+
+</div>
+</header>
+
+<section class="services">
+
+<div class="container">
+
+<h1 style="text-align:center; margin:40px 0;">Air Ticket Services</h1>
+
+<div class="card">
+<i class="fa-solid fa-plane-departure"></i>
+<h3>International Air Ticket</h3>
+<p>We provide affordable international flight booking services.</p>
+</div>
+
+<div class="card">
+<i class="fa-solid fa-plane-arrival"></i>
+<h3>One Way Ticket</h3>
+<p>Book one-way flights to your destination easily.</p>
+</div>
+
+<div class="card">
+<i class="fa-solid fa-plane-circle-check"></i>
+<h3>Round Trip Ticket</h3>
+<p>Best prices for return and round-trip air tickets.</p>
+</div>
+
+<div class="card">
+<i class="fa-solid fa-headset"></i>
+<h3>24/7 Customer Support</h3>
+<p>Our support team is ready to help with your bookings.</p>
+</div>
+
+</div>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>

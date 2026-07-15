@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prince Air Ltd | Overseas Recruitment & Travel Agency</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#f8f5ff;
+}
+
+header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+padding:18px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:rgba(255,255,255,.95);
+backdrop-filter:blur(12px);
+box-shadow:0 5px 20px rgba(0,0,0,.08);
+z-index:1000;
+}
+
+.logo{
+font-size:60px;
+font-weight:700;
+color:#F57C00;
+}
+
+nav a{
+text-decoration:none;
+margin-left:25px;
+color:#673AB7;
+font-weight:600;
+transition:.3s;
+}
+
+nav a:hover{
+color:#6d28d9;
+}
+
+.hero{
+height:100vh;
+background:linear-gradient(rgba(20,25,60,.55),rgba(20,25,60,.55)),
+url("images/hero.jpg");
+background-size:cover;
+background-position:center;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+color:white;
+}
+
+.hero h1{
+font-size:60px;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:22px;
+margin-bottom:35px;
+}
+
+.btn{
+display:inline-block;
+padding:15px 40px;
+border-radius:50px;
+background:#ff6b00;
+color:white;
+text-decoration:none;
+margin:10px;
+font-weight:bold;
+transition:.3s;
+}
+
+.btn:hover{
+transform:translateY(-5px);
+background:#e85d04;
+}
+
+.search-box{
+
+background:white;
+max-width:1100px;
+margin:-80px auto 60px;
+padding:30px;
+border-radius:20px;
+box-shadow:0 15px 35px rgba(0,0,0,.15);
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+gap:15px;
+
+}
+
+.search-box input,
+.search-box select{
+
+padding:15px;
+border:1px solid #ddd;
+border-radius:10px;
+outline:none;
+
+}
+
+.search-box button{
+
+background:#6d28d9;
+color:white;
+border:none;
+border-radius:10px;
+cursor:pointer;
+font-size:18px;
+
+}
+
+<section class="flight-search">
+  <div class="search-box">
+    <h2>Book Your Flight</h2>
+
+    <div class="form-grid">
+      <input type="text" placeholder="From">
+      <input type="text" placeholder="To">
+      <input type="date">
+      <select>
+        <option>1 Passenger</option>
+        <option>2 Passengers</option>
+        <option>3 Passengers</option>
+        <option>4+ Passengers</option>
+      </select>
+
+      <button>Search Flights</button>
+    </div>
+  </div>
+</section>
+
+.services{
+
+padding:80px 8%;
+
+}
+
+.section-title{
+
+text-align:center;
+font-size:40px;
+color:#6d28d9;
+margin-bottom:50px;
+
+}
+
+.cards{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+
+}
+
+.card{
+
+background:white;
+padding:35px;
+border-radius:20px;
+text-align:center;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+transition:.3s;
+
+}
+
+.card:hover{
+
+transform:translateY(-10px);
+
+}
+
+.card h3{
+
+margin:20px 0;
+color:#1e3a8a;
+
+}
+
+.card p{
+
+color:#555;
+
+}
+
+/*================ FOOTER =================*/
+
+.footer{
+    background:#0B1F3A;
+    color:#fff;
+    margin-top:80px;
+    border-top:4px solid transparent;
+    border-image:linear-gradient(90deg,#8A2BE2,#FF7A00) 1;
+}
+
+.footer-container{
+    max-width:1200px;
+    margin:auto;
+    padding:60px 20px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+    gap:35px;
+}
+
+.footer-box h2,
+.footer-box h3{
+    color:#fff;
+    margin-bottom:18px;
+}
+
+.footer-box p,
+.footer-box li{
+    color:#d7d7d7;
+    line-height:1.8;
+    list-style:none;
+}
+
+.footer-box ul{
+    padding:0;
+}
+
+.footer-box a{
+    color:#d7d7d7;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.footer-box a:hover{
+    color:#FF7A00;
+    padding-left:6px;
+}
+
+.social{
+    margin-top:15px;
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px;
+}
+
+.social a{
+    padding:10px 18px;
+    border:1px solid rgba(255,255,255,.2);
+    border-radius:30px;
+    transition:.3s;
+}
+
+.social a:hover{
+    background:#FF7A00;
+    color:#fff;
+    border-color:#FF7A00;
+}
+
+.footer-bottom{
+    text-align:center;
+    padding:20px;
+    border-top:1px solid rgba(255,255,255,.1);
+    color:#ccc;
+    font-size:14px;
+}
+
+.footer-bottom span{
+    color:#FF7A00;
+    font-weight:bold;
+}
+
+@media(max-width:768px){
+    .footer-container{
+        text-align:center;
+    }
+
+    .social{
+        justify-content:center;
+    }
+}
+</style>
+</head>
+
+<script>
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => {
+    navigator.serviceWorker.register("service-worker.js");
+  });
+}
+</script>
+
+<body>
+    <link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#1d3557">
+<link rel="apple-touch-icon" href="images/icon-192.png">
+
+
+<header>
+
+<div class="logo">Prince Air Ltd</div>
+
+<nav>
+
+<a href="#">Home</a>
+<a href="#">Services</a>
+<a href="#">Countries</a>
+<a href="#">About</a>
+<a href="#">Contact</a>
+<a href="login.html">Login</a>
+
+</nav>
+
+</header>
+
+<section class="hero">
+
+<div>
+
+<h1>Fly Beyond Borders</h1>
+
+<p>Trusted Overseas Recruitment, Air Ticket, Visa Processing & Travel Solutions</p>
+
+<a href="#" class="btn">Book Flight</a>
+
+<a href="#" class="btn">Apply Visa</a>
+
+</div>
+
+</section>
+
+<div class="search-box">
+
+<input type="text" placeholder="From">
+
+<input type="text" placeholder="To">
+
+<input type="date">
+
+<input type="date">
+
+<select>
+
+<option>Passengers</option>
+<option>1 Adult</option>
+<option>2 Adults</option>
+<option>Family</option>
+
+</select>
+
+<button>Search</button>
+
+</div>
+
+<section class="services">
+
+<h2 class="section-title">Our Premium Services</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Air Ticket Booking</h3>
+<p>Domestic & International Flight Ticket Booking.</p>
+</div>
+
+<div class="card">
+<h3>Visa Processing</h3>
+<p>Fast & Reliable Visa Assistance Worldwide.</p>
+</div>
+
+<div class="card">
+<h3>Overseas Recruitment</h3>
+<p>Professional Overseas Employment Solutions.</p>
+</div>
+
+<div class="card">
+<h3>Hotel Booking</h3>
+<p>Luxury Hotels At Best Prices.</p>
+</div>
+
+<div class="card">
+<h3>Travel Insurance</h3>
+<p>Secure Your Journey With Trusted Insurance.</p>
+</div>
+
+<div class="card">
+<h3>Tour Packages</h3>
+<p>Discover Amazing Destinations With Our Packages.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= FOOTER START ================= -->
+<footer class="footer">
+  <div class="footer-container">
+
+    <div class="footer-box">
+      <h2>Prince Air Ltd</h2>
+      <p>
+        Your trusted travel partner for Air Tickets, Visa Processing,
+        Tour Packages and Hotel Booking.
+      </p>
+    </div>
+
+    <div class="footer-box">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-box">
+      <h3>Our Services</h3>
+      <ul>
+        <li>Air Ticket</li>
+        <li>Visa Processing</li>
+        <li>Tour Packages</li>
+        <li>Hotel Booking</li>
+      </ul>
+    </div>
+
+    <div class="footer-box">
+      <h3>Contact Us</h3>
+      <p>📍 Dhaka, Bangladesh</p>
+      <p>📞 +880 1989008683</p>
+      <p>✉️ princeairbd@icloudcom</p>
+      <p>✉️ princeairlimited@gmail.com</p>
+
+      <div class="social">
+        <a href="#">Facebook</a>
+        <a href="#">Instagram</a> 
+        <a href="http://wa.me/8801989008683"
+        target="_blank">WhatsApp</a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    © 2026 Prince Air Ltd. All Rights Reserved.<br>
+    Designed by <span>Sadia Corporation</span>
+  </div>
+</footer>
+<!-- ================= FOOTER END ================= -->
+
+</body>
+</html>
