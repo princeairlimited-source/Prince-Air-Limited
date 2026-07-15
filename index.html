@@ -300,13 +300,15 @@ color:#555;
 <link rel="apple-touch-icon" href="icon-192.png">
   
 </head>
-  
 <script>
-
-</script>
-
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => {
+    navigator.serviceWorker.register("./service-worker.js");
+  });
+}
+</script>  
+  
 <body>
-
 
 <header>
 
